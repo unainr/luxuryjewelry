@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atifical Necklace</title>
+    <!-- custom-css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/respon.css">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ==================== boxicon ============= -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!-- ===================== jqueary cdn =============== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- ======================
+        header-section
+    ======================== -->
+    <header id="home">
+        <div class="header-top">
+            <div class="container d-flex justify-content-between align-items-center py-3">
+                <span>Free shipping for orders over </span>
+                <span>Call: 800-6688-999</span>
+            </div>
+        </div>
+        <!-- nav-bar -->
+        <nav class="navbar navbar-expand-lg nav-wrap text-center">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="bx bx-menu navbar-toggler-icon"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html">PRODUCT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog-set">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cart.html"><i class='bx bxs-cart'></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- ===========================
+        product-details-section
+================================ -->
+
+
+    <section class="item-page" id="items-select">
+        <div class="wrapper">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3 col-sm-6 text-white mt-5">
+                        <div class="productitem1 text-center">
+                            <img id="artifical1" src="images/atifical/alishba1.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <!-- =================
+                        material-div
+                    ===================== -->
+                    <div class="col-md-9 col-sm-6 text-white pt-3 pt-lg-0">
+                        <div class="product-description d-flex justify-content-between">
+                            <h3 id="artificalname"> Necklace - Flow</h3>
+                            <h3> <del class="fs-5">3000 PKR</del> <span id="artificalprice"> 2,500 PKR </span></h3>
+                        </div>
+                        <div class="material-selection" data-bs-toggle="collapse" data-bs-target="#collapse">
+                            <h5>Material <i class='bx bx-plus-circle'></i></h5>
+                        </div>
+                        <div class="material-icons collapse" id="collapse">
+                            <img id="meta1" src="images/product/material1.png" class="img-fluid" alt="">
+                            <img id="meta2" src="images/product/material2.png" class="img-fluid" alt="">
+                            <img id="meta3" src="images/product/material3.png" class="img-fluid" alt="">
+                        </div>
+                        <hr>
+                        <!-- ================
+                            ending-section
+                            ================= -->
+                        <div class="stone-gem" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                            <h5>Style <i class='bx bx-plus-circle'></i></h5>
+                        </div>
+                        <div class="material-icons collapse" id="collapse1">
+                            <img id="goku1" src="images/atifical/butterfly1.png" class="img-fluid" width="10%" alt="">
+                            <img id="goku2" src="images/atifical/star1.png" class="img-fluid" width="10%" alt="">
+                            <img id="goku3" src="images/atifical/moon1.png" class="img-fluid" width="10%" alt="">
+                            <img id="goku4" src="images/atifical/heart1.png" class="img-fluid" width="10%" alt="">
+                        </div>
+                        <hr>
+                        <div class="stone-gem" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                            <h5>Name <i class='bx bx-plus-circle'></i></h5>
+                        </div>
+                        <div class="material-icons collapse" id="collapse2">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Avaliable name
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#" id="amna">Amna</a></li>
+                                    <li><a class="dropdown-item" href="#" id="sana">Sana</a></li>
+                                    <li><a class="dropdown-item" href="#" id="ayesha">Ayesha</a></li>
+                                    <li><a class="dropdown-item" href="#" id="fatima">Fatima</a></li>
+                                    <li><a class="dropdown-item" href="#" id="jaweria">Jaweria</a></li>
+                                    <li><a class="dropdown-item" href="#" id="komal">Komal</a></li>
+                                    <li><a class="dropdown-item" href="#" id="rubab">Rubab</a></li>
+                                    <li><a class="dropdown-item" href="#" id="iqra">Iqra</a></li>
+                                    <li><a class="dropdown-item" href="#" id="saba">Saba</a></li>
+                                    <li><a class="dropdown-item" href="#" id="zara">Zara</a></li>
+                                    <li><a class="dropdown-item" href="#" id="aqsa">Aqsa</a></li>
+                                    <li><a class="dropdown-item" href="#" id="alishba">Alishba</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <!-- =====================
+                            Gem-stone-ending
+                        ========================== -->
+
+                        <div class="addtocart pt-3">
+                            <a onclick="tekken8()" class="main-btn" href="">add to cart</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="demo-jin">
+        <div class="wrapper">
+            <div class="container">
+                <div class="row text-white">
+                    <div class="col-12 col-sm-12">
+                        <h3>Related Product</h3>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-sm-6 col-md-3 card-banner">
+                        <div class="product-info">
+                            <div class="main-sec card-thumb mb-2">
+                                <a href="ring4.html"> <img src="images/product1/ind3 (1).jpg"
+                                        class="img-fluid card-img-top" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 card-banner">
+                        <div class="product-info">
+                            <div class="main-sec card-thumb mb-2">
+                                <a href="neckeara1.html"><img src="images/product1/neck3 (2).jpg"
+                                        class="img-fluid card-img-top" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 card-banner">
+                        <div class="product-info">
+                            <div class="main-sec card-thumb mb-2">
+                                <a href="bracelet.html"><img src="images/product1/story2 (2).jpg"
+                                        class="img-fluid card-img-top" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 card-banner">
+                        <div class="product-info">
+                            <div class="main-sec card-thumb mb-2">
+                                <a href="necklace1.html"><img src="images/product1/walker2 (1).jpg"
+                                        class="img-fluid card-img-top" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        $(document).ready(function () {
+            $("#meta2").click(function () {
+                $("#artifical1").attr("src", "images/atifical/alishba1 (2).jpg");
+            });
+
+            $("#meta3").click(function () {
+                $("#artifical1").attr("src", "images/atifical/alishba1 (1).jpg");
+
+            });
+
+            $("#meta1").click(function () {
+                $("#artifical1").attr("src", "images/atifical/alishba1.jpg");
+            });
+            //diamond-section
+            $("#goku1").click(function () {
+                $("#artifical1").attr("src", "images/atifical/alishba1 (3).jpg");
+                $("#meta1").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/alishba1 (3).jpg");
+                });
+                $("#meta2").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/alishba1 (5).jpg");
+                });
+                $("#meta3").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/alishba1 (4).jpg");
+                });
+
+            });
+            //next-section
+            $("#goku2").click(function () {
+                $("#artifical1").attr("src", "images/atifical/alishba1 (14).jpg");
+                $("#meta1").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/alishba1 (14).jpg");
+                });
+                $("#meta2").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/alishba1 (12).jpg");
+                });
+                $("#meta3").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/alishba1 (13).jpg");
+                });
+
+            });
+            $("#goku4").click(function () {
+                $("#artifical1").attr("src", "images/atifical/alishba1 (8).jpg");
+                $("#meta1").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/alishba1 (8).jpg");
+                });
+                $("#meta2").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/alishba1 (6).jpg");
+                });
+                $("#meta3").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/alishba1 (7).jpg");
+                });
+
+            });
+            //another-section
+            $("#goku3").click(function () {
+                $("#artifical1").attr("src", "images/atifical/alishba1 (9).jpg");
+                $("#meta1").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/alishba1 (9).jpg");
+                });
+                $("#meta2").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/alishba1 (11).jpg");
+                });
+                $("#meta3").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/alishba1 (10).jpg");
+                });
+                //final-section
+
+
+            });
+
+
+            //amna-section
+            $("#amna").click(function () {
+                $("#artifical1").attr("src", "images/atifical/amna1.jpg");
+
+                $("#meta3").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/amna1 (1).jpg");
+                });
+
+                $("#meta1").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/amna1 (2).jpg");
+                });
+                $("#meta2").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/amna1.jpg");
+                });
+                //break-point
+                $("#goku1").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/amna1 (3).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/amna1 (3).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/amna1 (5).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/amna1 (4).jpg");
+                    });
+
+                });
+                //breakend
+
+                //break-point
+                $("#goku2").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/amna1 (14).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/amna1 (14).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/amna1 (12).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/amna1 (13).jpg");
+                    });
+
+                });
+                //breakend
+                //break-point
+                $("#goku3").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/amna1 (9).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/amna1 (9).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/amna1 (11).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/amna1 (10).jpg");
+                    });
+
+                });
+
+                //break-point
+                $("#goku4").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/amna1 (6).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/amna1 (6).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/amna1 (8).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/amna1 (7).jpg");
+                    });
+
+                });
+                //breakend
+
+
+            });
+
+            //sana-section
+            $("#sana").click(function () {
+                $("#artifical1").attr("src", "images/atifical/ali1 (8).jpg");
+
+                $("#meta3").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/ali1 (9).jpg");
+                });
+
+                $("#meta1").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/ali1 (8).jpg");
+                });
+                $("#meta2").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/ali1 (7).jpg");
+                });
+                //break-point
+                $("#goku1").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/sana1 (1).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/sana1 (1).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/sana1 (2).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/sana1.jpg");
+                    });
+
+                });
+                //breakend
+
+                //break-point
+                $("#goku2").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/sana1 (9).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/sana1 (9).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/sana1 (11).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/sana1 (10).jpg");
+                    });
+
+                });
+                //breakend
+                //break-point
+                $("#goku3").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/sana1 (6).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/sana1 (6).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/sana1 (8).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/sana1 (7).jpg");
+                    });
+
+                });
+
+                //break-point
+                $("#goku4").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/sana1 (3).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/sana1 (3).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/sana1 (5).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/sana1 (4).jpg");
+                    });
+
+                });
+                //breakend
+
+
+            });
+            //jinkazama...
+            //ayesha-section
+            $("#ayesha").click(function () {
+                $("#artifical1").attr("src", "images/atifical/ayesha1.jpg");
+
+                $("#meta3").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/ayesha1 (1).jpg");
+                });
+
+                $("#meta1").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/ayesha1.jpg");
+                });
+                $("#meta2").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/ayesha1 (2).jpg");
+                });
+                //break-point
+                $("#goku1").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/ayesha1 (3).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/ayesha1 (3).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/ayesha1 (5).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/ayesha1 (4).jpg");
+                    });
+
+                });
+                //breakend
+
+                //break-point
+                $("#goku2").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/ayesha1 (13).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/ayesha1 (13).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/ayesha1 (12).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/ayesha1 (14).jpg");
+                    });
+
+                });
+                //breakend
+                //break-point
+                $("#goku3").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/ayesha1 (9).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/ayesha1 (9).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/ayesha1 (11).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/ayesha1 (10).jpg");
+                    });
+
+                });
+
+                //break-point
+                $("#goku4").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/ayesha1 (6).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/ayesha1 (6).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/ayesha1 (8).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/ayesha1 (7).jpg");
+                    });
+
+                });
+                //breakend
+
+
+            });
+            //jinkazama
+            //fatima-section
+            $("#fatima").click(function () {
+                $("#artifical1").attr("src", "images/atifical/fatima1 (1).jpg");
+
+                $("#meta3").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/fatima1 (2).jpg");
+                });
+
+                $("#meta1").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/fatima1 (1).jpg");
+                });
+                $("#meta2").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/fatima1.jpg");
+                });
+                //break-point
+                $("#goku1").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/fatima1 (3).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/fatima1 (3).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/fatima1 (5).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/fatima1 (4).jpg");
+                    });
+
+                });
+                //breakend
+
+                //break-point
+                $("#goku2").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/fatima1 (14).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/fatima1 (14).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/fatima1 (12).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/fatima1 (13).jpg");
+                    });
+
+                });
+                //breakend
+                //break-point
+                $("#goku3").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/fatima1 (9).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/fatima1 (9).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/fatima1 (11).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/fatima1 (10).jpg");
+                    });
+
+                });
+
+                //break-point
+                $("#goku4").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/fatima1 (8).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/fatima1 (8).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/fatima1 (6).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/fatima1 (7).jpg");
+                    });
+
+                });
+                //breakend
+
+
+            });
+            //jinkazama
+            //jaweria-section
+            $("#jaweria").click(function () {
+                $("#artifical1").attr("src", "images/atifical/jaweria1 (1).jpg");
+
+                $("#meta3").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/jaweria1 (2).jpg");
+                });
+
+                $("#meta1").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/jaweria1 (1).jpg");
+                });
+                $("#meta2").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/jaweria1.jpg");
+                });
+                //break-point
+                $("#goku1").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/jaweria1 (5).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/jaweria1 (5).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/jaweria1 (4).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/jaweria1 (3).jpg");
+                    });
+
+                });
+                //breakend
+
+                //break-point
+                $("#goku2").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/jaweria1 (12).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/jaweria1 (12).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/jaweria1 (14).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/jaweria1 (13).jpg");
+                    });
+
+                });
+                //breakend
+                //break-point
+                $("#goku3").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/jaweria1 (11).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/jaweria1 (11).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/jaweria1 (9).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/jaweria1 (10).jpg");
+                    });
+
+                });
+
+                //break-point
+                $("#goku4").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/jaweria1 (6).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/jaweria1 (6).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/jaweria1 (8).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/jaweria1 (7).jpg");
+                    });
+
+                });
+                //breakend
+
+
+            });
+            //jinkazama
+            //komal-section
+            $("#komal").click(function () {
+                $("#artifical1").attr("src", "images/atifical/komal1 (2).jpg");
+
+                $("#meta3").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/komal1 (1).jpg");
+                });
+
+                $("#meta1").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/komal1 (2).jpg");
+                });
+                $("#meta2").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/komal1.jpg");
+                });
+                //break-point
+                $("#goku1").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/komal1 (3).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/komal1 (3).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/komal1 (5).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/komal1 (4).jpg");
+                    });
+
+                });
+                //breakend
+
+                //break-point
+                $("#goku2").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/komal1 (14).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/komal1 (14).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/komal1 (12).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/komal1 (13).jpg");
+                    });
+
+                });
+                //breakend
+                //break-point
+                $("#goku3").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/komal1 (9).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/komal1 (9).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/komal1 (11).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/komal1 (10).jpg");
+                    });
+
+                });
+
+                //break-point
+                $("#goku4").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/komal1 (8).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/komal1 (8).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/komal1 (6).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/komal1 (7).jpg");
+                    });
+
+                });
+                //breakend
+
+
+            });
+            //jinkazama
+            //rubab-section
+            $("#rubab").click(function () {
+                $("#artifical1").attr("src", "images/atifical/rubab1.jpg");
+
+                $("#meta3").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/rubab1 (1).jpg");
+                });
+
+                $("#meta1").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/rubab1.jpg");
+                });
+                $("#meta2").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/rubab1 (2).jpg");
+                });
+                //break-point
+                $("#goku1").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/rubab1 (3).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/rubab1 (3).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/rubab1 (5).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/rubab1 (4).jpg");
+                    });
+
+                });
+                //breakend
+
+                //break-point
+                $("#goku2").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/rubab1 (13).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/rubab1 (13).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/rubab1 (12).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/rubab1 (14).jpg");
+                    });
+
+                });
+                //breakend
+                //break-point
+                $("#goku3").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/rubab1 (9).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/rubab1 (9).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/rubab1 (11).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/rubab1 (10).jpg");
+                    });
+
+                });
+
+                //break-point
+                $("#goku4").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/rubab1 (6).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/rubab1 (6).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/rubab1 (8).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/rubab1 (7).jpg");
+                    });
+
+                });
+                //breakend
+
+            });
+            //jinkazama
+            //iqra-section
+            $("#iqra").click(function () {
+                $("#artifical1").attr("src", "images/atifical/rubab1 (15).jpg");
+
+                $("#meta3").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/rubab1 (16).jpg");
+                });
+
+                $("#meta1").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/rubab1 (15).jpg");
+                });
+                $("#meta2").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/rubab1 (17).jpg");
+                });
+                //break-point
+                $("#goku1").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/rubab1 (18).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/rubab1 (18).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/rubab1 (20).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/rubab1 (19).jpg");
+                    });
+
+                });
+                //breakend
+
+                //break-point
+                $("#goku2").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/rubab1 (28).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/rubab1 (28).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/rubab1 (27).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/rubab1 (29).jpg");
+                    });
+
+                });
+                //breakend
+                //break-point
+                $("#goku3").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/rubab1 (24).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/rubab1 (24).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/rubab1 (26).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/rubab1 (25).jpg");
+                    });
+
+                });
+
+                //break-point
+                $("#goku4").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/rubab1 (21).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/rubab1 (21).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/rubab1 (22).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/rubab1 (23).jpg");
+                    });
+
+                });
+                //breakend
+
+            });
+            //jinkazama
+            //saba-section
+            $("#saba").click(function () {
+                $("#artifical1").attr("src", "images/atifical/saba1.jpg");
+
+                $("#meta3").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/saba1 (1).jpg");
+                });
+
+                $("#meta1").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/saba1.jpg");
+                });
+                $("#meta2").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/saba1 (2).jpg");
+                });
+                //break-point
+                $("#goku1").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/saba1 (5).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/saba1 (5).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/saba1 (3).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/saba1 (4).jpg");
+                    });
+
+                });
+                //breakend
+
+                //break-point
+                $("#goku2").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/saba1 (12).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/saba1 (12).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/saba1 (14).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/saba1 (13).jpg");
+                    });
+
+                });
+                //breakend
+                //break-point
+                $("#goku3").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/saba1 (11).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/saba1 (11).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/saba1 (9).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/saba1 (10).jpg");
+                    });
+
+                });
+
+                //break-point
+                $("#goku4").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/saba1 (6).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/saba1 (6).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/saba1 (8).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/saba1 (7).jpg");
+                    });
+
+                });
+                //breakend
+
+            });
+            //jinkazama
+            //zara-section
+            $("#zara").click(function () {
+                $("#artifical1").attr("src", "images/atifical/zara1.jpg");
+
+                $("#meta3").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/zara1 (1).jpg");
+                });
+
+                $("#meta1").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/zara1.jpg");
+                });
+                $("#meta2").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/zara1 (2).jpg");
+                });
+                //break-point
+                $("#goku1").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/zara1 (3).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/zara1 (3).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/zara1 (5).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/zara1 (4).jpg");
+                    });
+
+                });
+                //breakend
+
+                //break-point
+                $("#goku2").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/zara1 (12).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/zara1 (12).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/zara1 (14).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/zara1 (13).jpg");
+                    });
+
+                });
+                //breakend
+                //break-point
+                $("#goku3").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/zara1 (9).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/zara1 (9).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/zara1 (11).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/zara1 (10).jpg");
+                    });
+
+                });
+
+                //break-point
+                $("#goku4").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/zara1 (7).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/zara1 (7).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/zara1 (6).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/zara1 (8).jpg");
+                    });
+
+                });
+                //breakend
+
+            });
+            //jinkazama
+            //aqsa-section
+            $("#aqsa").click(function () {
+                $("#artifical1").attr("src", "images/atifical/aqsa1.jpg");
+
+                $("#meta3").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/aqsa1 (1).jpg");
+                });
+
+                $("#meta1").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/aqsa1.jpg");
+                });
+                $("#meta2").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/aqsa1 (2).jpg");
+                });
+                //break-point
+                $("#goku1").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/aqsa1 (5).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/aqsa1 (5).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/aqsa1 (3).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/aqsa1 (4).jpg");
+                    });
+
+                });
+                //breakend
+
+                //break-point
+                $("#goku2").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/aqsa1 (12).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/aqsa1 (12).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/aqsa1 (14).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/aqsa1 (13).jpg");
+                    });
+
+                });
+                //breakend
+                //break-point
+                $("#goku3").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/aqsa1 (11).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/aqsa1 (11).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/aqsa1 (9).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/aqsa1 (10).jpg");
+                    });
+
+                });
+
+                //break-point
+                $("#goku4").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/aqsa1 (6).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/aqsa1 (6).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/aqsa1 (8).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/aqsa1 (7).jpg");
+                    });
+
+                });
+                //breakend
+
+            });
+            //jinkazama
+            //alishba-section
+            $("#alishba").click(function () {
+                $("#artifical1").attr("src", "images/atifical/alishba1.jpg");
+
+                $("#meta3").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/alishba1 (1).jpg");
+                });
+
+                $("#meta1").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/alishba1.jpg");
+                });
+                $("#meta2").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/alishba1 (2).jpg");
+                });
+                //break-point
+                $("#goku1").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/alishba1 (3).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/alishba1 (3).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/alishba1 (5).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/alishba1 (4).jpg");
+                    });
+
+                });
+                //breakend
+
+                //break-point
+                $("#goku2").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/alishba1 (14).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/alishba1 (14).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/alishba1 (12).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/alishba1 (13).jpg");
+                    });
+
+                });
+                //breakend
+                //break-point
+                $("#goku3").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/alishba1 (9).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/alishba1 (9).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/alishba1 (11).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/alishba1 (10).jpg");
+                    });
+
+                });
+
+                //break-point
+                $("#goku4").click(function () {
+                    $("#artifical1").attr("src", "images/atifical/alishba1 (8).jpg");
+                    $("#meta1").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/alishba1 (8).jpg");
+                    });
+                    $("#meta2").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/alishba1 (6).jpg");
+                    });
+                    $("#meta3").click(function () {
+                        $("#artifical1").attr("src", "images/atifical/alishba1 (7).jpg");
+                    });
+
+                });
+                //breakend
+
+            });
+            //jinkazama
+
+        });
+
+
+
+    </script>
+
+
+    <!-- ======================
+        footer-section
+    ================ -->
+
+
+    <footer class="footer-section" id="footer-design">
+        <div class="wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-3">
+                        <div class="img-log-setting text-center">
+                            <img src="images/logo.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="footer-text text-white text-center">
+                            <p>A boutique fine jewelry brand inspired and<br> designed on par with cosmopolitan <br>
+                                lifestyles and
+                                contemporary luxury trends.</p>
+                            <h5>Top Rated Products</h5>
+                            <a href="neckeara1.html"><img src="images/product1/neck2.jpg" class="img-fluid" width="20%"
+                                    alt=""></a>
+                            <a href="tops1.html"> <img src="images/product1/tops1.jpg" class="img-fluid" width="20%"
+                                    alt=""></a>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-3  ps-5 ds">
+                        <div class="quick-links text-white ">
+                            <h3 class="text-center">Categories</h3>
+                        </div>
+                        <div class="order-list text-white  ms-5 ">
+                            <ul>
+                                <li> <a href="index.html">HOME</a> </li>
+                                <li> <a href="about.html">ABOUT</a> </li>
+                                <li> <a href="product.html">PRODUCT</a> </li>
+                                <li> <a href="index.html">BLOG</a> </li>
+                                <li> <a href="contact.html">CONTACT</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-3 ps-2 ds">
+                        <div class="quick-links text-white ">
+                            <h3 class="text-center">Customer</h3>
+                        </div>
+                        <div class="order-list text-white ms-5">
+                            <ul>
+                                <li> <a href="index.html">Shipping</a> </li>
+                                <li> <a href="index.html">30-Day Returns</a> </li>
+                                <li> <a href="index.html">Free Gift Packaging</a> </li>
+                                <li> <a href="#blog-set">Jewelry Insurance</a> </li>
+                                <li> <a href="#blog-set">Help Topics</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-3 text-center">
+                        <div class="follow-us text-white">
+                            <h3>FOLLOW US</h3>
+                        </div>
+                        <div class="social-media text-white pt-2">
+                            <h3><a href="https://www.facebook.com/"><i class='bx bxl-facebook-circle'></i></a>
+                                <a href="https://www.instagram.com/"><i class='bx bxl-instagram-alt'></i></a>
+                                <a href="https://web.whatsapp.com/"> <i class='bx bxl-whatsapp'></i></a>
+                                <a href="https://twitter.com/?lang=en"> <i class='bx bxl-twitter'></i></a>
+                                <a href="https://www.youtube.com/"> <i class='bx bxl-youtube'></i></a>
+                            </h3>
+                            <img src="images/product/pay1.png" class="img-fluid pt-3" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="copy-right text-center text-white pt-5">
+                    <h3>© 2024 All Rights Reserved By jewllary</h3>
+                    <hr>
+                    <p>© Distributed By jewllary</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Backt To Top -->
+    <div id="scrollUp" title="Scroll To Top">
+        <a href="#home"><span class="bx bx-up-arrow-alt fs-4 text-white"></span></a>
+    </div>
+
+
+
+
+    <!-- bootstrap js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- custom-js -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

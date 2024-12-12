@@ -1,0 +1,105 @@
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 991px) {
+  .nav-wrap {
+    background-color: black;
+    border: black;
+    overflow: hidden;
+  }
+  .nav-wrap i {
+    color: #fff;
+  }
+  /* ========================
+        hero-section 
+       =======================*/
+  #hero .carousel-caption {
+    top: 7.562rem;
+  }
+
+  /* footer-section */
+
+  #footer-design .quick-links h3 {
+    margin: 0.335rem auto;
+  }
+  /* product-section */
+  #product .product-info .main-sec {
+    border-radius: 10px;
+  }
+  #footer-design .ds {
+    text-align: center;
+    padding-left: 0 !important;
+  }
+  #footer-design .order-list {
+    margin-left: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .main-btn::after {
+    transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+  }
+
+  .main-btn:hover::before {
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    background-color: var(--primary-color);
+  }
+
+  .main-btn:hover::after {
+    transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    background-color: var(--primary-color);
+  }
+
+  /*=======================  hero-section ================ */
+  #hero .carousel-caption h1 {
+    font-size: 1rem;
+    margin: 14px auto;
+  }
+  #hero .carousel-caption {
+    top: 2.19rem;
+  }
+  #product .product-info .main-sec {
+    border-radius: 0px;
+  }
+  #footer-design .ds {
+    text-align: center;
+    padding-left: 0 !important;
+  }
+  #footer-design .order-list {
+    margin-left: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .header-top {
+    display: none;
+  }
+  #hero .carousel-caption {
+    top: 2.19rem;
+  }
+  #hero .carousel-caption h6 {
+    font-size: 9px;
+  }
+  #hero .carousel-caption h1 {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .main-btn {
+    height: 1px;
+    line-height: 11px;
+    font-size: 0.7125rem;
+  }
+  .main-btn::after {
+    transform: translateY(0.7275rem);
+    -webkit-transform: translateY(0.7275rem);
+  }
+  .main-btn::before {
+    transform: translateY(-0.7275rem);
+    -webkit-transform: translateY(-0.7275rem);
+  }
+}

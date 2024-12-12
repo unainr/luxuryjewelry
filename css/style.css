@@ -1,0 +1,791 @@
+/* index.inneer
+1. home
+2.about
+3.product
+4.blog
+5.contact */
+
+/* font family import */
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: var(--primary-color) !important;
+}
+
+/*===== Variable Define =====*/
+:root {
+  --primary-color: #ff553e;
+  --secondary-color: #202428;
+  --white-color: #fff;
+  --black-color: #151515;
+}
+/* 202428 */
+html {
+  scroll-behavior: smooth;
+}
+
+/*
+=========================================
+    Custom Scrollbar
+=========================================
+*/
+
+::-webkit-scrollbar {
+  width: 0.3125rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+/* ==========================
+    custom css desing
+    ===========================
+  */
+/* .main-btn::after,
+.main-btn::before{
+  background-color: var(--white-color);
+} */
+
+.main-btn {
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.125rem;
+  display: inline-block;
+  color: var(--white-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0 30px;
+  position: relative;
+}
+
+.main-btn::after,
+.main-btn::before {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  left: 0;
+  width: 100%;
+  height: 1%;
+  content: "";
+  transition: all 0.5s ease-out 0s;
+  -webkit-transition: all 0.5s ease-out 0s;
+  transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+}
+
+.main-btn::after {
+  transform: translateY(20px);
+  -webkit-transform: translateY(20px);
+}
+
+.main-btn:hover::before {
+  transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  background-color: var(--primary-color);
+}
+
+.main-btn:hover::after {
+  transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+  background-color: var(--primary-color);
+}
+
+.main-btn:hover {
+  color: var(--primary-color) !important;
+}
+
+.wrapper {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: var(--secondary-color);
+}
+
+/* top-header */
+.header-top {
+  background-color: var(--secondary-color);
+}
+.header-top span {
+  font-size: 0.875rem;
+  color: var(--white-color);
+  letter-spacing: 0.1062rem;
+}
+
+/*==================== 
+     nav-bar-styling
+  ====================== */
+
+.nav-wrap {
+  padding: 14px 0;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.nav-wrap {
+  position: fixed !important;
+  width: 100%;
+  left: 0;
+  z-index: 1000;
+  -webkit-transition: all-.3s ease-out;
+  transition: 0.3s ease-out;
+  font-family: "Dosis", sans-serif;
+}
+
+.nav-wrap .navbar-brand img {
+  max-width: 120px;
+  height: auto;
+}
+.nav-wrap .navbar-toggler:focus {
+  box-shadow: none;
+}
+.nav-wrap .nav-item {
+  padding: 0 0.461rem;
+  transition: all 200ms linear;
+}
+.nav-wrap .nav-item .nav-link {
+  position: relative;
+  font-size: 16px;
+  display: inline-block;
+  color: var(--white-color);
+}
+
+.nav-wrap .nav-link:hover,
+.nav-wrap .nav-link.active {
+  color: var(--primary-color);
+}
+.nav-wrap .nav-item .nav-link::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary-color);
+  transition: 0.5s;
+  bottom: 0;
+}
+
+.nav-wrap .nav-item .nav-link.active::after,
+.nav-wrap .nav-item .nav-link:hover::after {
+  width: 100%;
+}
+/* =================
+      darktheme
+   ================ */
+.nav-wrap .icons {
+  color: var(--white-color) !important;
+  cursor: pointer;
+  padding: 4px;
+}
+
+/*======================
+ onscroll-changing-color
+ ======================= 
+ */
+.nav-wrap.header-scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: var(--black-color);
+  -webkit-animation: 1s ease-in-out 0s normal none 1 running fadeInDown;
+  animation: 1s ease-in-out 0s normal none 1 running fadeInDown;
+}
+
+@keyframes fadeInDown {
+  0% {
+    top: -30%;
+  }
+
+  50% {
+    top: -15%;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+/* ===========================
+    bannaer -section
+    ========================== */
+#hero .carousel-caption {
+  top: 12rem;
+  font-family: "Dosis", sans-serif;
+}
+#hero .carousel-caption p {
+  max-width: 36.25rem;
+  margin: 1.0625rem auto;
+  font-family: "Dosis", sans-serif;
+}
+
+#hero .carousel-caption h1 {
+  text-transform: uppercase;
+}
+
+/* =============================
+  new-arrivals
+================================ */
+.new-arrivals .banner-info {
+  bottom: 30px;
+  margin: auto;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  padding: 0 15px;
+  color: var(--white-color);
+  font-family: "Dosis", sans-serif;
+}
+.perfect-you h1,
+.perfect-you p {
+  font-family: "Dosis", sans-serif;
+}
+#perfect .wrapper {
+  background-color: var(--black-color);
+}
+#perfect hr {
+  width: 4rem;
+  margin: auto;
+  color: var(--primary-color);
+  height: 0.125rem;
+}
+.new-arrivals .card-banner:nth-child(3) h2,
+.new-arrivals .card-banner:nth-child(3) p,
+.new-arrivals .card-banner:nth-child(3) a {
+  color: var(--black-color);
+}
+.new-arrivals .card-banner:nth-child(3) a::before,
+.new-arrivals .card-banner:nth-child(3) a::after {
+  background-color: var(--black-color);
+}
+.new-arrivals .card-banner .card-thumb img {
+  transition: all 0.5s ease-out 0s;
+}
+.new-arrivals .card-banner .card-thumb img:hover {
+  transform: scale(1.2);
+  opacity: 0.4;
+}
+.new-arrivals .card-banner .card-thumb {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+/* ======================================
+            product-section
+========================================= */
+#product .wrapper {
+  background-color: var(--secondary-color);
+}
+#product h1,
+#product p {
+  font-family: "Dosis", sans-serif;
+}
+#product .product-text .price-section h5 {
+  color: var(--primary-color);
+}
+#product .star-icon i {
+  color: rgb(253, 181, 57);
+  align-items: center;
+}
+#product hr {
+  width: 4rem;
+  margin: auto;
+  color: var(--primary-color);
+  height: 0.125rem;
+}
+#product .product-info .main-sec {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 0 100px;
+}
+#product .product-info img {
+  transition: all 0.5s ease-out 0s;
+}
+#product .product-info:hover img {
+  transform: scale(1.2);
+  opacity: 0.2;
+}
+#product .product-info h4 {
+  font-family: "Dosis", sans-serif;
+}
+/* ===============================
+    jewellary-update-section
+    =============================== */
+#jewellary h1,
+#jewellary p {
+  font-family: "Dosis", sans-serif;
+}
+#jewellary .wrapper {
+  background-color: var(--black-color);
+}
+#jewellary hr {
+  width: 4rem;
+  margin: auto;
+  color: var(--primary-color);
+  height: 0.125rem;
+}
+.jewellary-section .jewellary-info span {
+  color: var(--primary-color);
+}
+.jewellary-section .jewellary-info h5,
+.jewellary-section .jewellary-info p {
+  color: var(--white-color);
+  font-family: "Dosis", sans-serif;
+}
+#jewellary .img-info img {
+  transition: all 0.5s ease-out 0s;
+}
+#jewellary .img-info img:hover {
+  transform: scale(0.9);
+  opacity: 0.4;
+}
+#jewellary .instragram .instra-text {
+  position: absolute;
+  top: 0rem;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  margin: auto;
+  height: 50%;
+  opacity: 0;
+  transition: all 0.5s ease-out 0s;
+  background-color: var(--primary-color);
+  -webkit-transition: all 0.5s ease-out 0s;
+}
+#jewellary .instragram .instra-text h3,
+#jewellary .instragram .instra-text a {
+  padding: 20px 0px;
+  color: var(--white-color);
+}
+#jewellary .instra-text a:hover {
+  color: var(--white-color) !important;
+}
+#jewellary .instragram:hover .instra-text {
+  opacity: 0.6;
+  height: 100%;
+}
+.modal-pic .main .modal-body {
+  position: absolute;
+  top: 3.453rem;
+  left: 0;
+  width: 100%;
+  color: var(--white-color);
+}
+.modal-pic button {
+  position: absolute;
+  top: 0rem;
+  right: 0;
+  padding: 14px;
+}
+.modal-pic .text-content h4 {
+  color: var(--primary-color);
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.modal-pic .text-content p {
+  font-family: "Dosis", sans-serif;
+  letter-spacing: 1px;
+}
+.modal-body .boxing a {
+  border: 1px solid var(--white-color);
+  transition: 0.3s ease-in-out 0s;
+  border-radius: 20px;
+  color: var(--primary-color) !important;
+  cursor: pointer;
+}
+
+/* ==================================
+        deal of the day 
+  ===================================*/
+#deal-of .wrapper {
+  background-color: var(--black-color);
+}
+#deal-of .text-deal h3 {
+  font-family: "Dosis", sans-serif;
+  color: var(--primary-color);
+  letter-spacing: 2px;
+}
+#deal-of .text-deal p {
+  font-family: "Dosis", sans-serif;
+  letter-spacing: 2px;
+}
+.text-deal {
+  background-image: url("../images/bg/jewelry2.jpg");
+  background-position: center;
+  background-repeat: fixed;
+  background-size: cover;
+}
+/* =============================
+      BLOG-SECTION
+================================ */
+#blog-set hr {
+  width: 4rem;
+  margin: auto;
+  color: var(--primary-color);
+  height: 0.125rem;
+}
+#blog-set .blog-item h1 {
+  font-family: "Dosis", sans-serif;
+}
+#blog-set .blog-item p {
+  font-family: "Dosis", sans-serif;
+}
+#blog-set .blog-item .blog-content:hover img {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+#blog-set .blog-item .blog-content img {
+  transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-out 0s;
+}
+#blog-set .blog-item .blog-content {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+#blog-set .blog-item .text-blog h3 {
+  color: var(--primary-color);
+  font-family: "Dosis", sans-serif;
+  letter-spacing: 0.01rem;
+  font-weight: 500;
+}
+#blog-set .blog-item .text-blog p {
+  font-family: "Dosis", sans-serif;
+  letter-spacing: 1px;
+}
+/* ==================================
+    footer section
+    ================================
+     */
+
+#footer-design .wrapper {
+  background: linear-gradient(rgba(5, 1, 1, 0.57), rgba(6, 8, 11, 0.57)),
+    url(../images/img/img-4.jpg) fixed center center;
+  background-size: cover;
+  padding: 1.1em 0;
+}
+#footer-design .img-log-setting img {
+  height: auto;
+}
+#footer-design .footer-text h5 {
+  font-family: "Dosis", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+#footer-design .footer-text p {
+  padding: 10px 0px;
+  font-family: "Dosis", sans-serif;
+}
+#footer-design .quick-links h3 {
+  font-family: "Dosis", sans-serif;
+}
+#footer-design .order-list ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+#footer-design .order-list ul li {
+  padding: 2px 0px;
+}
+#footer-design .order-list a {
+  color: var(--white-color);
+  font-family: "Dosis", sans-serif;
+}
+#footer-design .follow-us {
+  font-family: "Dosis", sans-serif;
+}
+#footer-design .social-media h3 i {
+  transition: 0.3s 0s;
+  color: var(--white-color);
+}
+#footer-design .social-media h3 i:hover {
+  color: var(--primary-color);
+}
+#footer-design .copy-right h3,
+#footer-design .copy-right p {
+  font-family: "Dosis", sans-serif;
+}
+#footer-design .copy-right h3 {
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+/* scroll-up  */
+#scrollUp {
+  position: fixed;
+  right: 2%;
+  bottom: 3%;
+  height: 2.813rem;
+  width: 2.5rem;
+  border-radius: 0.35rem;
+  text-align: center;
+  cursor: pointer;
+  z-index: 500;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  background: var(--primary-color);
+}
+#scrollUp span {
+  line-height: 2.625rem;
+}
+#scrollUp.scroll-back {
+  opacity: 1;
+}
+
+/* =========================================
+    necklaces-pages-section
+    ======================================= */
+#banner-bor .banner {
+  background: linear-gradient(rgb(5 1 1 / 42%), rgb(80 136 201 / 0%)),
+    url(../images/bg/s2.jpg) fixed center center;
+  background-size: cover;
+  padding: 7em 0;
+}
+#banner-bor .contect-neck h3 {
+  font-family: "Dosis", sans-serif;
+  letter-spacing: 2px;
+  font-size: 3.1345rem;
+  text-transform: uppercase;
+}
+
+/* ==========================
+  product-details-section
+  ====================== */
+.details-items .wrapper {
+  background-color: var(--black-color);
+}
+#items-select .productitem1 {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 0 100px;
+}
+#items-select .productitem1 img {
+  transition: all 0.5s ease-out 0s;
+}
+#items-select .productitem1:hover img {
+  transform: rotate(50deg);
+  opacity: 0.2;
+}
+#items-select .product-description h3 {
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--primary-color);
+  padding: 0.9274rem 0;
+}
+#items-select .product-description del {
+  color: gray;
+}
+#items-select .material-selection {
+  cursor: pointer;
+  font-family: "Dosis", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 600;
+  transition: 0.3s ease-in-out 0s;
+  -webkit-transition: 0.3s ease-in-out 0s;
+}
+#items-select .material-selection i {
+  padding: 0 1.1rem;
+  float: right;
+}
+
+#items-select .material-selection:hover {
+  color: var(--primary-color);
+  animation-name: kazama;
+  animation-iteration-count: infinite;
+}
+#items-select .material-icons img {
+  padding: 0 0.9064rem;
+}
+
+#items-select .stone-gem {
+  cursor: pointer;
+  font-family: "Dosis", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 600;
+  transition: 0.3s ease-in-out 0s;
+  -webkit-transition: 0.3s ease-in-out 0s;
+}
+#items-select .stone-gem:hover {
+  color: var(--primary-color);
+}
+#items-select .stone-gem i {
+  padding: 0 1.1rem;
+  float: right;
+}
+
+#items-select .ring-size {
+  cursor: pointer;
+  font-family: "Dosis", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 600;
+  transition: 0.3s ease-in-out 0s;
+  -webkit-transition: 0.3s ease-in-out 0s;
+}
+#items-select .ring-size:hover {
+  color: var(--primary-color);
+}
+#items-select .ring-size i {
+  padding: 0 1.1rem;
+  float: right;
+}
+#items-select .sizing-of-ring h5 {
+  cursor: pointer;
+  font-family: "Dosis", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 600;
+  transition: 0.3s ease-in-out 0s;
+  -webkit-transition: 0.3s ease-in-out 0s;
+  border: 1px solid var(--white-color);
+  padding: 0 0.9275rem;
+}
+#items-select .sizing-of-ring :hover {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+#items-select .timing-deal {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+/* ================================
+    cart-section-styling
+    ========================= */
+#cart-section h4 {
+  font-family: "Dosis", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+#cart-section .icon-cross i {
+  float: right !important;
+}
+#cart-section .back a {
+  color: var(--white-color) !important;
+  transition: 0.3s ease-in-out 0s;
+  font-size: 1.3275rem;
+}
+#cart-section .back a:hover {
+  color: var(--primary-color) !important;
+}
+/* ===================
+  about-section
+  =================== */
+.about-b .wrapper {
+  background-color: var(--secondary-color) !important;
+}
+#question-about .wrapper {
+  background-color: var(--black-color);
+}
+#question-about .wrapper h1 {
+  font-family: "Dosis", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+#question-about .accordion-item {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  font-family: "Dosis", sans-serif;
+  letter-spacing: 2px;
+}
+#question-about .accordion-button {
+  background-color: var(--black-color);
+  color: var(--primary-color);
+  font-family: "Dosis", sans-serif;
+  letter-spacing: 2px;
+}
+#question-about .accordion-button:focus {
+  box-shadow: none !important;
+}
+.ban1 .wrapper {
+  background-color: var(--secondary-color);
+}
+.main-about .wrapper {
+  background-color: var(--black-color);
+}
+.main-about h3,
+.main-about h5,
+.main-about p {
+  font-family: "Dosis", sans-serif;
+  letter-spacing: 1px;
+}
+.main-about h5 {
+  font-style: italic;
+  color: var(--primary-color);
+}
+#banner-bor a {
+  color: var(--white-color);
+}
+/* ===================
+  contactus
+============== */
+.form-question .wrapper {
+  background-color: var(--black-color);
+}
+.form-question h2,
+.form-question p {
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+#cart-section a {
+  float: right;
+}
+/* Dropdown Button */
+.dropbtn {
+  background-color: var(--white-color);
+  color: white;
+  padding: 0.45657rem;
+  font-size: 14px;
+  border: none;
+}
+.demo-jin .wrapper {
+  background-color: var(--black-color);
+}
+.demo-jin h3 {
+  font-family: "Dosis", sans-serif;
+}
+/* Custom Cursor */
+.custom-cursor,
+.custom-cursor-dot {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  opacity: 0;
+}
+
+/* decorative */
+.custom-cursor {
+  width: 50px;
+  height: 50px;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+}
+
+.custom-cursor-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
